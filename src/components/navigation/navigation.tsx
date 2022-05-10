@@ -22,7 +22,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
 `;
 
-export default function navigation() {
+export const Navigation = () => {
     return(
         <StyledNav>
             <StyledUl>
