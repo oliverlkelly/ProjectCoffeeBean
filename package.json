@@ -1,0 +1,19 @@
+{
+  "name": "projectcoffeebean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverlkelly/ProjectCoffeeBean.git"
+  },
+  "author": "Oliver Liam Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverlkelly/ProjectCoffeeBean/issues"
+  },
+  "homepage": "https://github.com/oliverlkelly/ProjectCoffeeBean#readme"
+}
