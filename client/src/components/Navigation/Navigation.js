@@ -1,27 +1,25 @@
-import { Button, AppBar, Box, Toolbar, IconButton, Avatar } from '@mui/material'
+import React from 'react';
+import { Button, AppBar, Box, Toolbar, IconButton, Avatar, Tabs, Tab } from '@mui/material'
 import { Menu } from '@mui/icons-material'
 
 const pages = ['Discover', 'Favourites', 'Profile'];
 
 export const Navigation = () => {
+    const [selectedTab, setSelectedTab] = React.useState(0);
+    const handleChange = (event, newValue) => {
+        setSelectedTab(newValue);
+    };
+
     return (
+        <>
         <AppBar>
-            <Toolbar>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                    {pages.map((page) => (
-                    <Button
-                        key={page}
-                        sx={{ my: 2, color: 'white', display: 'block' }}
-                    >
-                        {page}
-                    </Button>
-                    ))}
-                </Box>
-                <IconButton>
-                    <Avatar/>
-                </IconButton>
-            </Toolbar>
+            <Tabs>
+               <Tab label='Discover'/>
+               <Tab label='Profile'/>
+               <Tab label='Login'/>
+            </Tabs>
         </AppBar>
+        </>
     );
   }
 
