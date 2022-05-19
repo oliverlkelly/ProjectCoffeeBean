@@ -44,7 +44,7 @@ function App() {
             element = {<Discover/>}
           />
           <Route
-            exact path = '/Profile'
+            exact path = '/profile'
             element = {<Profile/>}
           />
           <Route

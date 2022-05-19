@@ -7,24 +7,27 @@ import {
     CardActions,
     Typography
 } from '@mui/material';
-  
-  export const DiscoverCard = () => {
+import { storeValueIsStoreObject } from '@apollo/client/cache/inmemory/helpers';
+
+
+
+export const DiscoverCard = () => {
+    const merchant = {
+        type: "Cafe",
+        name: "Generic Coffee Shop",
+        description: "Lorem Ipsum this is a description"
+    }
     return (
-      <Card sx={{ minWidth: 275 }}>
+      <Card sx={{ maxWidth: 275 }}>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            Word of the Day
+            {merchant.type}
           </Typography>
           <Typography variant="h5" component="div">
-            benevolent
-          </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            adjective
+            {merchant.name}
           </Typography>
           <Typography variant="body2">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
+            {merchant.description}
           </Typography>
         </CardContent>
         <CardActions>
@@ -32,4 +35,4 @@ import {
         </CardActions>
       </Card>
     );
-  }
+}

@@ -17,7 +17,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 
 export const Login = () => {
     return(
-        <Grid container component="main">
+        <Grid container component="main" style={{ marginTop: "15vh"}}>
             <Grid item xs={false} sm={4} md={3.5}/>
             <Grid item xs={6} sm={4} md={4} component={Paper} elevation={6} square>
                 <div>
