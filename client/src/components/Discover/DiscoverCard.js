@@ -29,6 +29,10 @@ export const DiscoverCard = () => {
           <Typography variant="body2">
             {merchant.description}
           </Typography>
+          <br/>
+          <Typography variant="body2">
+            Rating:
+          </Typography>
         </CardContent>
         <CardActions>
           <Button size="small">Learn More</Button>

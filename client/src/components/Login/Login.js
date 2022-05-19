@@ -21,10 +21,10 @@ export const Login = () => {
             <Grid item xs={false} sm={4} md={3.5}/>
             <Grid item xs={6} sm={4} md={4} component={Paper} elevation={6} square>
                 <div>
-                    <Avatar>
-                        <LockOutlinedIcon />
+                    <Avatar style={{marginLeft: '45%'}}>
+                        <LockOutlinedIcon/>
                     </Avatar>
-                    <Typography component="h1" variant="h5">
+                    <Typography component="h1" variant="h5" style={{marginLeft: '42%'}}>
                         Sign in
                     </Typography>
                     <form noValidate>
