@@ -1,4 +1,5 @@
 export * from './Navigation/Navigation';
 export * from './Login/Login';
-// export *  from './discoverPage/discoverPage';
-// export * from './merchantCard/merchantCard';
+export *  from './Discover/Discover';
+export *  from './Discover/DiscoverCard';
+export * from './Profile/Profile';

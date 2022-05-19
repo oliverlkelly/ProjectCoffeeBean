@@ -1,24 +1,37 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, AppBar, Box, Toolbar, IconButton, Avatar, Tabs, Tab } from '@mui/material'
 import { Menu } from '@mui/icons-material'
 
-const pages = ['Discover', 'Favourites', 'Profile'];
+
 
 export const Navigation = () => {
-    const [selectedTab, setSelectedTab] = React.useState(0);
-    const handleChange = (event, newValue) => {
-        setSelectedTab(newValue);
-    };
-
+    const pages = ['/', '/profile', '/login'];
     return (
         <>
         <AppBar>
             <Tabs>
-               <Tab label='Discover'/>
-               <Tab label='Profile'/>
-               <Tab label='Login'/>
+               <Tab 
+               label='Discover' 
+               value={pages[0]}
+               component={Link}
+               to={pages[0]}
+               />
+               <Tab 
+               label='Profile'
+               value={pages[1]}
+               component={Link}
+               to={pages[1]}
+               />
+               <Tab 
+               label='Login'
+               value={pages[2]}
+               component={Link}
+               to={pages[2]}
+               />
             </Tabs>
         </AppBar>
+        {}
         </>
     );
   }
