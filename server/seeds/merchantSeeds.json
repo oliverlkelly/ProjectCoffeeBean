@@ -1,0 +1,28 @@
+[
+    {
+        "mname": "Best Coffee",
+        "mtype": "Cafe",
+        "mdesc": "The first store"
+    },
+    {
+        "mname": "Worst Coffee",
+        "mtype": "Bar",
+        "mdesc": "The second store"
+    },
+    {
+        "mname": "Can't drink milk",
+        "mtype": "Cafe",
+        "mdesc": "Black coffee only"
+    },
+    {
+        "mname": "Neverending Story",
+        "mtype": "Cafe",
+        "mdesc": "Will this ever end"
+    },
+    {
+        "mname": "Another Coffee Shop",
+        "mtype": "Cafe",
+        "mdesc": "No, it shant"
+    }
+]
+

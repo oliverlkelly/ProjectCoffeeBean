@@ -4,7 +4,7 @@ const session = require('express-session');
 const mongodb = require('mongodb').MongoClient;
 const { ApolloServer } = require('apollo-server-express');
 const { authMiddleware } = require('./utils/auth');
-const { typeDefs, resolvers } = require('./routes');
+const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT;
