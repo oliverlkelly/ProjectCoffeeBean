@@ -21,9 +21,9 @@ const typeDefs = gql`
   }
 
   type Query {
-    Users: [User]
+    users: [User]
     user(uname: String!): User
-    Merchants: [Merchants]
+    merchants: [Merchant]
     merchant(mname: String!): Merchant
   }
 
