@@ -7,7 +7,14 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navigation, Login, Discover, Profile, DiscoverCard } from './components'
+
+import Discover from './pages/Discover';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+//import SingleThought from './pages/SingleThought';
+import Profile from './pages/Profile';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -37,21 +44,33 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <Navigation/>
-        <Routes>
-          <Route
-            exact path = '/'
-            element = {<Discover/>}
-          />
-          <Route
-            exact path = '/profile'
-            element = {<Profile/>}
-          />
-          <Route
-            exact path = '/login'
-            element = {<Login/>}
-          />
-        </Routes>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <Header />
+          <div className="container">
+            <Routes>
+              <Route 
+                path="/"
+                element={<Discover />}
+              />
+              <Route 
+                path="/login" 
+                element={<Login />}
+              />
+              <Route 
+                path="/signup" 
+                element={<Signup />}
+              />
+              <Route 
+                path="/me" 
+                element={<Profile />}
+              />
+              <Route 
+                path="/profiles/:username" 
+                element={<Profile />}
+              />
+            </Routes>
+          </div>
+        </div>
       </Router>
     </ApolloProvider>
   );
