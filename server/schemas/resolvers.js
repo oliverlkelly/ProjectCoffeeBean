@@ -10,13 +10,17 @@ const resolvers = {
     user: async (parent, { uname }) => {
       return User.findOne({ uname });
     },
-    merchant: async () => {
+    me: async (parent, args, context) => {
+      if (context.user) {
+        return User.findOne({ _id: context.user._id });
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
+    merchants: async () => {
       return Merchant.find();
-    },
-    merchant: async (parent, { mname }) => {
-      return Merchant.findOne({ mname });
-    },
+    }
   },
+
   Mutation: {
     addUser: async (parent, { uname, email, password }) => {
       const user = await User.create({ uname, email, password });
