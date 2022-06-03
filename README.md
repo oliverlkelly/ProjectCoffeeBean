@@ -24,7 +24,7 @@ This application is proof of concept, it can be used to view a list of coffee st
 To test the login for yourself, please use the below details;
 
 - Username: oliver.kelly@mail.com
-- Password: Password123
+- Password: Password1
 
 ![Alt text](./assets/discoverpage.png "Screenshot the Discover Page")
 
