@@ -21,6 +21,10 @@ This application can be used as a web application through the deployment link, o
 ## Usage
 
 This application is proof of concept, it can be used to view a list of coffee stores, login and logout securely.
+To test the login for yourself, please use the below details;
+
+- Username: oliver.kelly@mail.com
+- Password: Password123
 
 ![Alt text](./assets/discoverpage.png "Screenshot the Discover Page")
 
